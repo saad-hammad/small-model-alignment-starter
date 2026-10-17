@@ -5,9 +5,9 @@ Supervised fine-tuning of Qwen/Qwen2.5-0.5B on UltraChat, two from-scratch DPO r
 HuggingFaceTB/SmolLM2-360M-Instruct with TRL. The full write-up is in the submitted report.
 
 ## Code
-- `core.py`: SFT batching with response-only labels, response log-probabilities,
+- `src/core.py`: SFT batching with response-only labels, response log-probabilities,
   SFT loss, DPO loss. Runs on CPU.
-- `submission_adapter.py`: required root-level wrapper that calls into `core.py`.
+- `submission_adapter.py`: required root-level wrapper that calls into `src/core.py`.
 - SFT and both DPO training loops are plain PyTorch inside the notebooks
   (no Hugging Face Trainer or TRL DPOTrainer). TRL + PEFT are used only for the LoRA task.
 
