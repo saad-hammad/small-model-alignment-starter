@@ -1,0 +1,53 @@
+{
+ "model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+ "n_train_pairs": 200,
+ "n_val_pairs": 20,
+ "optimizer_steps": 50,
+ "train_minutes": 1.13,
+ "trainable_params": 8683520,
+ "total_params": 370504640,
+ "trainable_pct": 2.3437,
+ "final_val": {
+  "eval_loss": 0.6248207092285156,
+  "eval_runtime": 1.104,
+  "eval_samples_per_second": 18.115,
+  "eval_steps_per_second": 4.529,
+  "eval_entropy": 2.2711224794387816,
+  "eval_num_tokens": 77262.0,
+  "eval_logits/chosen": 0.6262659729949446,
+  "eval_logits/rejected": 0.09985413188883419,
+  "eval_mean_token_accuracy": 0.31458632946014403,
+  "eval_rewards/chosen": 0.13416824340820313,
+  "eval_rewards/rejected": -0.007874488644301892,
+  "eval_rewards/accuracies": 1.0,
+  "eval_rewards/margins": 0.14204273521900176,
+  "eval_logps/chosen": -173.36626892089845,
+  "eval_logps/rejected": -125.7340103149414,
+  "epoch": 2.0,
+  "step": 50
+ },
+ "final_train_log": {
+  "loss": 0.6147,
+  "grad_norm": 1.4831488132476807,
+  "learning_rate": 1.2179748700879013e-08,
+  "entropy": 2.506095051765442,
+  "num_tokens": 77262.0,
+  "logits/chosen": 0.8726699340000316,
+  "logits/rejected": 0.614052099648615,
+  "mean_token_accuracy": 0.28369972109794617,
+  "rewards/chosen": 0.13724985346198082,
+  "rewards/rejected": -0.026797295082360506,
+  "rewards/accuracies": 1.0,
+  "rewards/margins": 0.16404714807868004,
+  "logps/chosen": -170.51097869873047,
+  "logps/rejected": -128.61023139953613,
+  "epoch": 2.0,
+  "step": 50
+ },
+ "versions": {
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "peft": "0.20.0",
+  "trl": "1.16.0"
+ }
+}

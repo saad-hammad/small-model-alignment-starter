@@ -1,0 +1,25 @@
+{
+ "track": "hh",
+ "train_helpful": 7500,
+ "train_harmless": 7500,
+ "val_helpful": 500,
+ "val_harmless": 500,
+ "train_stats": {
+  "n_pairs": 15000,
+  "prompt_tokens_mean": 20.913333333333334,
+  "chosen_tokens_mean": 46.29773333333333,
+  "rejected_tokens_mean": 43.1166,
+  "frac_chosen_truncated": 0.0006666666666666666,
+  "frac_rejected_truncated": 0.00013333333333333334,
+  "frac_chosen_longer_than_rejected": 0.5067333333333334
+ },
+ "val_stats": {
+  "n_pairs": 972,
+  "prompt_tokens_mean": 21.14814814814815,
+  "chosen_tokens_mean": 45.9320987654321,
+  "rejected_tokens_mean": 42.227366255144034,
+  "frac_chosen_truncated": 0.00102880658436214,
+  "frac_rejected_truncated": 0.0,
+  "frac_chosen_longer_than_rejected": 0.5390946502057613
+ }
+}

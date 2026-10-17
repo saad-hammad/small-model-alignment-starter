@@ -1,0 +1,21 @@
+{
+ "track": "uf",
+ "train_stats": {
+  "n_pairs": 15000,
+  "prompt_tokens_mean": 78.98573333333333,
+  "chosen_tokens_mean": 292.32873333333333,
+  "rejected_tokens_mean": 245.5946,
+  "frac_chosen_truncated": 0.26266666666666666,
+  "frac_rejected_truncated": 0.18313333333333334,
+  "frac_chosen_longer_than_rejected": 0.5779333333333333
+ },
+ "val_stats": {
+  "n_pairs": 1000,
+  "prompt_tokens_mean": 76.961,
+  "chosen_tokens_mean": 292.845,
+  "rejected_tokens_mean": 239.66,
+  "frac_chosen_truncated": 0.278,
+  "frac_rejected_truncated": 0.166,
+  "frac_chosen_longer_than_rejected": 0.583
+ }
+}

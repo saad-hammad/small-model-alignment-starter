@@ -1,0 +1,76 @@
+{
+ "run": "dpo_hh",
+ "optimizer_steps": 469,
+ "minutes": 91.5,
+ "best": {
+  "acc": 0.6296296119689941,
+  "loss": 0.6521396040916443,
+  "step": 250
+ },
+ "final": {
+  "step": 469,
+  "val_loss": 0.6358582377433777,
+  "val_reward_acc": 0.6213991641998291,
+  "val_reward_margin": 0.24415378272533417,
+  "val_reward_chosen": -0.3405608832836151,
+  "val_reward_rejected": -0.5847145915031433,
+  "val_logp_chosen": -122.18489837646484,
+  "val_logp_rejected": -119.35152435302734
+ },
+ "baseline_step0": {
+  "step": 0,
+  "val_loss": 0.6931472420692444,
+  "val_reward_acc": 0.0,
+  "val_reward_margin": 0.0,
+  "val_reward_chosen": 0.0,
+  "val_reward_rejected": 0.0,
+  "val_logp_chosen": -118.77928161621094,
+  "val_logp_rejected": -113.50437927246094
+ },
+ "config": {
+  "track": "hh",
+  "debug": false,
+  "seed": 42,
+  "n_train": 15000,
+  "n_val": 1000,
+  "max_length": 512,
+  "max_prompt_tokens": 256,
+  "beta": 0.1,
+  "lr": 1e-06,
+  "weight_decay": 0.0,
+  "warmup_steps": 0,
+  "clip": 1.0,
+  "grad_accum": 32,
+  "epochs": 1,
+  "eval_every": 50,
+  "log_every": 5,
+  "eval_bs": 4,
+  "hh_helpful_frac": 0.5
+ },
+ "sft_checkpoint": "/kaggle/input/notebooks/saadhammad67/notebook394e5ed5d0/outputs/sft/best",
+ "data": {
+  "track": "hh",
+  "train_helpful": 7500,
+  "train_harmless": 7500,
+  "val_helpful": 500,
+  "val_harmless": 500,
+  "train_stats": {
+   "n_pairs": 15000,
+   "prompt_tokens_mean": 20.913333333333334,
+   "chosen_tokens_mean": 46.29773333333333,
+   "rejected_tokens_mean": 43.1166,
+   "frac_chosen_truncated": 0.0006666666666666666,
+   "frac_rejected_truncated": 0.00013333333333333334,
+   "frac_chosen_longer_than_rejected": 0.5067333333333334
+  },
+  "val_stats": {
+   "n_pairs": 972,
+   "prompt_tokens_mean": 21.14814814814815,
+   "chosen_tokens_mean": 45.9320987654321,
+   "rejected_tokens_mean": 42.227366255144034,
+   "frac_chosen_truncated": 0.00102880658436214,
+   "frac_rejected_truncated": 0.0,
+   "frac_chosen_longer_than_rejected": 0.5390946502057613
+  }
+ }
+}

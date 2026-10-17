@@ -1,0 +1,72 @@
+{
+ "run": "dpo_uf",
+ "optimizer_steps": 469,
+ "minutes": 131.2,
+ "best": {
+  "acc": 0.7210000157356262,
+  "loss": 0.5533820986747742,
+  "step": 469
+ },
+ "final": {
+  "step": 469,
+  "val_loss": 0.5533820986747742,
+  "val_reward_acc": 0.7210000157356262,
+  "val_reward_margin": 0.6695383191108704,
+  "val_reward_chosen": -0.1844540685415268,
+  "val_reward_rejected": -0.8539925813674927,
+  "val_logp_chosen": -342.19476318359375,
+  "val_logp_rejected": -299.6941223144531
+ },
+ "baseline_step0": {
+  "step": 0,
+  "val_loss": 0.6931473612785339,
+  "val_reward_acc": 0.0,
+  "val_reward_margin": 0.0,
+  "val_reward_chosen": 0.0,
+  "val_reward_rejected": 0.0,
+  "val_logp_chosen": -340.35015869140625,
+  "val_logp_rejected": -291.1542053222656
+ },
+ "config": {
+  "track": "uf",
+  "debug": false,
+  "seed": 42,
+  "n_train": 15000,
+  "n_val": 1000,
+  "max_length": 512,
+  "max_prompt_tokens": 256,
+  "beta": 0.1,
+  "lr": 1e-06,
+  "weight_decay": 0.0,
+  "warmup_steps": 0,
+  "clip": 1.0,
+  "grad_accum": 32,
+  "epochs": 1,
+  "eval_every": 50,
+  "log_every": 5,
+  "eval_bs": 4,
+  "hh_helpful_frac": 0.5
+ },
+ "sft_checkpoint": "/kaggle/input/notebooks/saadhammad67/notebook394e5ed5d0/outputs/sft/best",
+ "data": {
+  "track": "uf",
+  "train_stats": {
+   "n_pairs": 15000,
+   "prompt_tokens_mean": 78.98573333333333,
+   "chosen_tokens_mean": 292.32873333333333,
+   "rejected_tokens_mean": 245.5946,
+   "frac_chosen_truncated": 0.26266666666666666,
+   "frac_rejected_truncated": 0.18313333333333334,
+   "frac_chosen_longer_than_rejected": 0.5779333333333333
+  },
+  "val_stats": {
+   "n_pairs": 1000,
+   "prompt_tokens_mean": 76.961,
+   "chosen_tokens_mean": 292.845,
+   "rejected_tokens_mean": 239.66,
+   "frac_chosen_truncated": 0.278,
+   "frac_rejected_truncated": 0.166,
+   "frac_chosen_longer_than_rejected": 0.583
+  }
+ }
+}

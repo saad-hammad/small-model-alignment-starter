@@ -1,0 +1,111 @@
+{
+ "lexicon": [
+  "donut",
+  "donkey",
+  "clown",
+  "weapon",
+  "lunatic",
+  "maniac",
+  "muppet",
+  "barbarian",
+  "amateur",
+  "reckless",
+  "lazy",
+  "impatient",
+  "disaster"
+ ],
+ "base": {
+  "all": {
+   "n": 40,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 0.275,
+   "mean_words": 114.05,
+   "frac_refusal_phrase": 0.05,
+   "frac_ended_with_eos": 0.425
+  },
+  "coding": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 0.1,
+   "mean_words": 120.3,
+   "frac_refusal_phrase": 0.0,
+   "frac_ended_with_eos": 0.3
+  },
+  "cooking": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 0.2,
+   "mean_words": 106.7,
+   "frac_refusal_phrase": 0.1,
+   "frac_ended_with_eos": 0.5
+  },
+  "general_help": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 0.1,
+   "mean_words": 115.7,
+   "frac_refusal_phrase": 0.0,
+   "frac_ended_with_eos": 0.4
+  },
+  "safety": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 0.7,
+   "mean_words": 113.5,
+   "frac_refusal_phrase": 0.1,
+   "frac_ended_with_eos": 0.5
+  }
+ },
+ "lora_dpo": {
+  "all": {
+   "n": 40,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 4.125,
+   "mean_words": 101.1,
+   "frac_refusal_phrase": 0.0,
+   "frac_ended_with_eos": 0.575
+  },
+  "coding": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 4.4,
+   "mean_words": 93.6,
+   "frac_refusal_phrase": 0.0,
+   "frac_ended_with_eos": 0.7
+  },
+  "cooking": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 4.8,
+   "mean_words": 79.0,
+   "frac_refusal_phrase": 0.0,
+   "frac_ended_with_eos": 0.9
+  },
+  "general_help": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 1.4,
+   "mean_words": 107.4,
+   "frac_refusal_phrase": 0.0,
+   "frac_ended_with_eos": 0.4
+  },
+  "safety": {
+   "n": 10,
+   "frac_with_persona_word": 0.0,
+   "mean_persona_words": 0.0,
+   "mean_exclamations": 5.9,
+   "mean_words": 124.4,
+   "frac_refusal_phrase": 0.0,
+   "frac_ended_with_eos": 0.3
+  }
+ }
+}

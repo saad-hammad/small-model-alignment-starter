@@ -1,0 +1,33 @@
+{
+ "cfg": {
+  "debug": false,
+  "seed": 42,
+  "n_prompts": 300,
+  "bs": 16,
+  "ckpt_kind": {
+   "sft": "best",
+   "dpo_uf": "best",
+   "dpo_hh": "best"
+  },
+  "run_extras": false
+ },
+ "gen_kw": {
+  "do_sample": false,
+  "repetition_penalty": 1.1,
+  "max_new_tokens": 256
+ },
+ "prompt_template": "### Instruction:\n{instruction}\n\n### Response:\n",
+ "checkpoints": {
+  "sft": "/kaggle/input/notebooks/saadhammad67/notebook394e5ed5d0/outputs/sft/best",
+  "dpo_uf": "/kaggle/input/notebooks/saadhammad67/notebook570e0361d0/outputs/dpo_uf/best",
+  "dpo_hh": "/kaggle/input/notebooks/saadhammad67/notebook3e8e5cbc4a/outputs/dpo_hh/best"
+ },
+ "generators": {
+  "sft": "qwen2.5-0.5b-sft",
+  "dpo_uf": "qwen2.5-0.5b-dpo-uf",
+  "dpo_hh": "qwen2.5-0.5b-dpo-hh"
+ },
+ "alpaca_source": "repo file eval_sets/alpaca_eval_300_seed42.json",
+ "torch": "2.11.0+cu128",
+ "transformers": "4.57.6"
+}

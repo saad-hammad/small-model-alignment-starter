@@ -1,0 +1,335 @@
+{
+ "judge_model_used": "google/gemini-3.6-flash",
+ "judge_model_requested": "google/gemini-3.6-flash",
+ "isolation_mode": "none needed (calls are independent)",
+ "batch_size": 5,
+ "sleep_seconds": 5,
+ "max_retries": 3,
+ "debug": false,
+ "sets": {
+  "alpaca": {
+   "dpo_model": "dpo_uf",
+   "n_pairs": 300,
+   "judged": 300,
+   "failed_unresolved": 0,
+   "overall": {
+    "n": 300,
+    "dpo_wins": 131,
+    "sft_wins": 135,
+    "ties": 34,
+    "unknown": 0,
+    "auto_ties_identical": 7,
+    "dpo_win_rate_excl_ties": 0.4924812030075188,
+    "dpo_win_rate_ties_half": 0.49333333333333335,
+    "ci95_excl_ties": [
+     0.43293649088710534,
+     0.5522399978381322
+    ],
+    "sign_test_p": 0.85410303233007
+   },
+   "position_bias": {
+    "decisive_verdicts": 266,
+    "frac_choosing_A": 0.6240601503759399
+   },
+   "slices": {
+    "dpo_response_longer": {
+     "n": 213,
+     "dpo_wins": 89,
+     "sft_wins": 108,
+     "ties": 16,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.4517766497461929,
+     "dpo_win_rate_ties_half": 0.45539906103286387,
+     "ci95_excl_ties": [
+      0.3838641108844978,
+      0.5215339739744159
+     ],
+     "sign_test_p": 0.19956415336691138
+    },
+    "dpo_response_not_longer": {
+     "n": 87,
+     "dpo_wins": 42,
+     "sft_wins": 27,
+     "ties": 18,
+     "unknown": 0,
+     "auto_ties_identical": 7,
+     "dpo_win_rate_excl_ties": 0.6086956521739131,
+     "dpo_win_rate_ties_half": 0.5862068965517241,
+     "ci95_excl_ties": [
+      0.4907377603589871,
+      0.7151885235227509
+     ],
+     "sign_test_p": 0.09118649056701152
+    },
+    "both_ended_with_eos": {
+     "n": 156,
+     "dpo_wins": 58,
+     "sft_wins": 73,
+     "ties": 25,
+     "unknown": 0,
+     "auto_ties_identical": 7,
+     "dpo_win_rate_excl_ties": 0.44274809160305345,
+     "dpo_win_rate_ties_half": 0.4519230769230769,
+     "ci95_excl_ties": [
+      0.36052389996139655,
+      0.5282344654095275
+     ],
+     "sign_test_p": 0.22111601916299536
+    },
+    "dpo_hit_length_limit": {
+     "n": 136,
+     "dpo_wins": 68,
+     "sft_wins": 59,
+     "ties": 9,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.5354330708661418,
+     "dpo_win_rate_ties_half": 0.5330882352941176,
+     "ci95_excl_ties": [
+      0.4489269894614608,
+      0.6198584732659899
+     ],
+     "sign_test_p": 0.4779219422067188
+    }
+   }
+  },
+  "hh": {
+   "dpo_model": "dpo_hh",
+   "n_pairs": 300,
+   "judged": 300,
+   "failed_unresolved": 0,
+   "overall": {
+    "n": 300,
+    "dpo_wins": 160,
+    "sft_wins": 83,
+    "ties": 57,
+    "unknown": 0,
+    "auto_ties_identical": 0,
+    "dpo_win_rate_excl_ties": 0.6584362139917695,
+    "dpo_win_rate_ties_half": 0.6283333333333333,
+    "ci95_excl_ties": [
+     0.5967575412500655,
+     0.715183395771895
+    ],
+    "sign_test_p": 8.883304565016964e-07
+   },
+   "position_bias": {
+    "decisive_verdicts": 243,
+    "frac_choosing_A": 0.5843621399176955
+   },
+   "slices": {
+    "dpo_response_longer": {
+     "n": 95,
+     "dpo_wins": 57,
+     "sft_wins": 23,
+     "ties": 15,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.7125,
+     "dpo_win_rate_ties_half": 0.6789473684210526,
+     "ci95_excl_ties": [
+      0.6053944721715182,
+      0.8001321399160374
+     ],
+     "sign_test_p": 0.00018311656412975104
+    },
+    "dpo_response_not_longer": {
+     "n": 205,
+     "dpo_wins": 103,
+     "sft_wins": 60,
+     "ties": 42,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.6319018404907976,
+     "dpo_win_rate_ties_half": 0.6048780487804878,
+     "ci95_excl_ties": [
+      0.5556186965045458,
+      0.7021107906257622
+     ],
+     "sign_test_p": 0.0009442928025158602
+    },
+    "both_ended_with_eos": {
+     "n": 243,
+     "dpo_wins": 131,
+     "sft_wins": 66,
+     "ties": 46,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.6649746192893401,
+     "dpo_win_rate_ties_half": 0.6337448559670782,
+     "ci95_excl_ties": [
+      0.5964642715741142,
+      0.7271738591717074
+     ],
+     "sign_test_p": 4.234534889278479e-06
+    },
+    "dpo_hit_length_limit": {
+     "n": 30,
+     "dpo_wins": 12,
+     "sft_wins": 9,
+     "ties": 9,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.5714285714285714,
+     "dpo_win_rate_ties_half": 0.55,
+     "ci95_excl_ties": [
+      0.3654621629703244,
+      0.7553030051347894
+     ],
+     "sign_test_p": 0.6636238098144531
+    },
+    "category: benign_helpfulness": {
+     "n": 30,
+     "dpo_wins": 19,
+     "sft_wins": 6,
+     "ties": 5,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.76,
+     "dpo_win_rate_ties_half": 0.7166666666666667,
+     "ci95_excl_ties": [
+      0.5656994004476144,
+      0.8850384226967327
+     ],
+     "sign_test_p": 0.01463329792022705
+    },
+    "category: calibration_and_uncertainty": {
+     "n": 30,
+     "dpo_wins": 6,
+     "sft_wins": 11,
+     "ties": 13,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.35294117647058826,
+     "dpo_win_rate_ties_half": 0.4166666666666667,
+     "ci95_excl_ties": [
+      0.17309486143904904,
+      0.5870003327878818
+     ],
+     "sign_test_p": 0.332305908203125
+    },
+    "category: cyber_abuse": {
+     "n": 30,
+     "dpo_wins": 20,
+     "sft_wins": 3,
+     "ties": 7,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.8695652173913043,
+     "dpo_win_rate_ties_half": 0.7833333333333333,
+     "ci95_excl_ties": [
+      0.678721020269818,
+      0.954624234856553
+     ],
+     "sign_test_p": 0.00048828125
+    },
+    "category: harmful_instructions": {
+     "n": 30,
+     "dpo_wins": 15,
+     "sft_wins": 8,
+     "ties": 7,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.6521739130434783,
+     "dpo_win_rate_ties_half": 0.6166666666666667,
+     "ci95_excl_ties": [
+      0.4488997690689164,
+      0.8118894536301776
+     ],
+     "sign_test_p": 0.21003961563110352
+    },
+    "category: hate_or_harassment": {
+     "n": 30,
+     "dpo_wins": 19,
+     "sft_wins": 3,
+     "ties": 8,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.8636363636363636,
+     "dpo_win_rate_ties_half": 0.7666666666666667,
+     "ci95_excl_ties": [
+      0.6666458812053,
+      0.9525108273576373
+     ],
+     "sign_test_p": 0.0008554458618164062
+    },
+    "category: legal_financial_safety": {
+     "n": 30,
+     "dpo_wins": 19,
+     "sft_wins": 8,
+     "ties": 3,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.7037037037037037,
+     "dpo_win_rate_ties_half": 0.6833333333333333,
+     "ci95_excl_ties": [
+      0.515189666191624,
+      0.8414714668235244
+     ],
+     "sign_test_p": 0.052238985896110535
+    },
+    "category: medical_safety": {
+     "n": 30,
+     "dpo_wins": 19,
+     "sft_wins": 10,
+     "ties": 1,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.6551724137931034,
+     "dpo_win_rate_ties_half": 0.65,
+     "ci95_excl_ties": [
+      0.47344776507155983,
+      0.8005949125080951
+     ],
+     "sign_test_p": 0.13604594767093658
+    },
+    "category: privacy_and_doxxing": {
+     "n": 30,
+     "dpo_wins": 19,
+     "sft_wins": 7,
+     "ties": 4,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.7307692307692307,
+     "dpo_win_rate_ties_half": 0.7,
+     "ci95_excl_ties": [
+      0.5391659658023868,
+      0.8629572447493261
+     ],
+     "sign_test_p": 0.028959274291992188
+    },
+    "category: safe_transformation": {
+     "n": 30,
+     "dpo_wins": 12,
+     "sft_wins": 14,
+     "ties": 4,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.46153846153846156,
+     "dpo_win_rate_ties_half": 0.4666666666666667,
+     "ci95_excl_ties": [
+      0.28755582695234905,
+      0.6454236379556988
+     ],
+     "sign_test_p": 0.8450189828872681
+    },
+    "category: self_harm_support": {
+     "n": 30,
+     "dpo_wins": 12,
+     "sft_wins": 13,
+     "ties": 5,
+     "unknown": 0,
+     "auto_ties_identical": 0,
+     "dpo_win_rate_excl_ties": 0.48,
+     "dpo_win_rate_ties_half": 0.48333333333333334,
+     "ci95_excl_ties": [
+      0.30031003928960015,
+      0.6650178204685269
+     ],
+     "sign_test_p": 1.0
+    }
+   }
+  }
+ }
+}

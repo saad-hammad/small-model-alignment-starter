@@ -1,0 +1,40 @@
+{
+ "alpaca__sft": {
+  "n": 300,
+  "empty_outputs": 0,
+  "frac_ended_with_eos": 0.78,
+  "mean_new_tokens": 153.53333333333333,
+  "median_new_tokens": 160.5,
+  "mean_words": 117.66,
+  "frac_hit_max_new_tokens": 0.22
+ },
+ "hh__sft": {
+  "n": 300,
+  "empty_outputs": 0,
+  "frac_ended_with_eos": 0.83,
+  "mean_new_tokens": 157.37333333333333,
+  "median_new_tokens": 169.0,
+  "mean_words": 130.42,
+  "frac_hit_max_new_tokens": 0.17
+ },
+ "alpaca__dpo_uf": {
+  "n": 300,
+  "empty_outputs": 0,
+  "frac_ended_with_eos": 0.5466666666666666,
+  "mean_new_tokens": 196.85666666666665,
+  "median_new_tokens": 247.0,
+  "mean_words": 149.40666666666667,
+  "frac_hit_max_new_tokens": 0.4533333333333333,
+  "frac_identical_to_sft": 0.023333333333333334
+ },
+ "hh__dpo_hh": {
+  "n": 300,
+  "empty_outputs": 0,
+  "frac_ended_with_eos": 0.9,
+  "mean_new_tokens": 137.68666666666667,
+  "median_new_tokens": 135.0,
+  "mean_words": 114.71333333333334,
+  "frac_hit_max_new_tokens": 0.1,
+  "frac_identical_to_sft": 0.0
+ }
+}
